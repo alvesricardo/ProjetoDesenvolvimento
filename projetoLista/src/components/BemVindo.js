@@ -15,9 +15,6 @@ export default BemVindo;
 
 const styles = StyleSheet.create({
     tit:{
-        color: '#51A7FF',
-        fontsize: 50,
-        fontWeight: 500,
-        marginBottom: 20
+        color: '#51A7FF'
     }
 })

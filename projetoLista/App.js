@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, {Component} from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, ScrollView } from 'react-native';
 import BemVindo from './src/components/BemVindo';
 import Lista from './src/components/Lista';
 
@@ -8,8 +8,9 @@ class App extends Component{
 
   render(){
       return(
+        <ScrollView showsVerticalScrollIndicator='false'>
           <View style={{flex: 1}}>
-            <View style={{height: 50, backgroundColor: 'blue'}}></View>
+            <View style={{height: 70, backgroundColor: 'blue'}}></View>
             <View style={styles.titulo}>
               <BemVindo titSaudacao="Lista de Produtos"></BemVindo>
             </View>
@@ -18,6 +19,7 @@ class App extends Component{
               <Text style={{color: 'white', textAlign: 'center'}}>Bela Vista Supermercados 2021</Text>
             </View>
           </View>
+          </ScrollView>
         
       )
   }

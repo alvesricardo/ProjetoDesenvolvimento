@@ -7,8 +7,8 @@ class Produto extends Component{
         return(
             <View style={styles.item}>
                 <Text style={styles.title}>{this.props.nome}</Text>
-                <Text style={{color: 'white'}}>Valor: {this.props.valor} Marca: {this.props.marca}</Text>
-                <Text style={{color: 'white'}}>Quantidade: {this.props.quantidade} Referencia: {this.props.referencia}</Text> 
+                <Text style={{color: 'white'}}>Valor: {this.props.valor}   Marca: {this.props.marca}</Text>
+                <Text style={{color: 'white'}}>Quantidade: {this.props.quantidade}   Referencia: {this.props.referencia}</Text> 
                 <View style={{flexDirection:'row'}}>
                     <Text style={styles.desc}>{this.props.desconto} </Text>
                     <Text style={styles.prom}>{this.props.promocao}</Text>  

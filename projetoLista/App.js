@@ -8,8 +8,9 @@ class App extends Component{
 
   render(){
       return(
-        <ScrollView showsVerticalScrollIndicator='false'>
+        
           <View style={{flex: 1}}>
+            <ScrollView showsVerticalScrollIndicator={false}>
             <View style={{height: 70, backgroundColor: 'blue'}}></View>
             <View style={styles.titulo}>
               <BemVindo titSaudacao="Lista de Produtos"></BemVindo>
@@ -18,8 +19,9 @@ class App extends Component{
             <View style={{height: 50, backgroundColor: 'black'}}>
               <Text style={{color: 'white', textAlign: 'center'}}>Bela Vista Supermercados 2021</Text>
             </View>
+            </ScrollView>
           </View>
-          </ScrollView>
+          
         
       )
   }
